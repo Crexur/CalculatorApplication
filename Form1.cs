@@ -22,10 +22,10 @@ namespace CalculatorApplication
             num1 = Convert.ToDouble(textBoxInput1.Text);
             num2 = Convert.ToDouble(textBoxInput2.Text);
 
-            string selectedOperator = cbOperator.SelectedItem.ToString();
+            string ComboBoxSelector = cbOperator.SelectedItem.ToString();
             double result = 0;
 
-            switch (selectedOperator)
+            switch (ComboBoxSelector)
             {
                 case "+":
                     result = cal.GetSum(num1, num2);
